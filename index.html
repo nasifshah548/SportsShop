@@ -8,8 +8,10 @@
     <script type="module" src="index.js" defer></script>
   </head>
   <body>
-    <div id="nav-bar-closed">
-      <img src="images/menu.png" alt="" class="nav-icon" />
+    <div id="nav-bar-closed" class="active">
+      <button id="btn-open">
+        <img src="images/menu.png" alt="" class="nav-icon" />
+      </button>
       <div class="socials">
         <a href=""
           ><img src="images/twitter.png" alt="" class="social-icon"
@@ -25,8 +27,18 @@
         /></a>
       </div>
     </div>
-    <div id="nav-bar-open" class="active">
-      <img src="images/menu.png" alt="" class="nav-icon" />
+    <div id="nav-bar-open">
+      <div>
+        <button id="btn-open">
+          <img src="images/close.png" alt="" class="nav-icon" />
+        </button>
+        <nav>
+          <button data-page-btn="home">HOME</button>
+          <button data-page-btn="men">MEN</button>
+          <button data-page-btn="women">WOMEN</button>
+          <button data-page-btn="contact">CONTACT</button>
+        </nav>
+      </div>
       <div class="socials">
         <a href=""
           ><img src="images/twitter.png" alt="" class="social-icon"
@@ -42,5 +54,20 @@
         /></a>
       </div>
     </div>
+
+    <!--HOME-->
+    <section id="home" data-page="home">
+      Lorem Ipsum Dolor Sit Amet. Home
+    </section>
+    <!--MENS-->
+    <section id="men" data-page="men">Lorem Ipsum Dolor Sit Amet. Men</section>
+    <!--WOMENS-->
+    <section id="women" data-page="women">
+      Lorem Ipsum Dolor Sit Amet. Women
+    </section>
+    <!--CONTACTS-->
+    <section id="contact" data-page="contact">
+      Lorem Ipsum Dolor Sit Amet. Contact
+    </section>
   </body>
 </html>
