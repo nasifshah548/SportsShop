@@ -87,3 +87,11 @@ nav button {
   background: transparent;
   border: 0;
 }
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}

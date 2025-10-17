@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="index.js" defer></script>
+    <script type="module" src="render-products.js" defer></script>
   </head>
   <body>
     <div id="nav-bar-closed" class="active">
@@ -56,17 +57,19 @@
     </div>
 
     <!--HOME-->
-    <section id="home" data-page="home">
-      Lorem Ipsum Dolor Sit Amet. Home
+    <section id="home" data-page="home" class="page active">
+      <div id="men-items"></div>
     </section>
     <!--MENS-->
-    <section id="men" data-page="men">Lorem Ipsum Dolor Sit Amet. Men</section>
+    <section id="men" data-page="men" class="page">
+      Lorem Ipsum Dolor Sit Amet. Men
+    </section>
     <!--WOMENS-->
-    <section id="women" data-page="women">
+    <section id="women" data-page="women" class="page">
       Lorem Ipsum Dolor Sit Amet. Women
     </section>
     <!--CONTACTS-->
-    <section id="contact" data-page="contact">
+    <section id="contact" data-page="contact" class="page">
       Lorem Ipsum Dolor Sit Amet. Contact
     </section>
   </body>

@@ -17,8 +17,17 @@ closeBtn.addEventListener("click", () => {
   navBarClosed.classList.add("active");
 });
 
-pageBtn.forEach((button) => {
-  button.addEventListener("click", () => {
+pageBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
     console.log(btn.dataset.pageBtn);
+    pages.forEach((page) => {
+      if (page.dataset.page === btn.dataset.pageBtn) {
+        page.classList.add("active");
+      } else {
+        page.classList.remove("active");
+      }
+    });
+    navBarOpen.classList.remove("active");
+    navBarClosed.classList.add("active");
   });
 });
