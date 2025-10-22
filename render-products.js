@@ -53,7 +53,7 @@ function renderProducts(products, container) {
     const priceContainer = document.createElement("div");
     priceContainer.classList.add("price-container");
     const price = document.createElement("p");
-    price.textContent = x.price;
+    price.textContent = "$" + x.price;
     price.classList.add("price");
     priceContainer.append(price);
 
@@ -85,6 +85,7 @@ function renderProducts(products, container) {
     // Generating the "Add to cart" button
     const cartBtn = document.createElement("button");
     cartBtn.classList.add("cart-btn");
+    cartBtn.textContent = "Add to Cart";
     wrapperDiv.append(cartBtn);
 
     container.append(wrapperDiv);
