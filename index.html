@@ -28,41 +28,60 @@
         /></a>
       </div>
     </div>
+    <!-- Navbar Close -->
     <div id="nav-bar-open">
       <div>
-        <button id="btn-open">
-          <img src="images/close.png" alt="" class="nav-icon" />
+        <button id="close-btn" class="transparent border-none cursor-pointer">
+          <img src="images/close.png" alt="Menu" class="close-navbar-icon" />
         </button>
-        <nav>
-          <button data-page-btn="home">HOME</button>
-          <button data-page-btn="men">MEN</button>
-          <button data-page-btn="women">WOMEN</button>
-          <button data-page-btn="contact">CONTACT</button>
+        <nav class="flex flex-column gap-2 mt-4">
+          <button
+            data-page-buttons="home"
+            class="border-none transparent text-left font-lg cursor-pointer"
+          >
+            HOME
+          </button>
+          <button
+            data-page-buttons="men"
+            class="border-none transparent text-left font-lg cursor-pointer"
+          >
+            MEN
+          </button>
+          <button
+            data-page-buttons="women"
+            class="border-none transparent text-left font-lg cursor-pointer"
+          >
+            WOMEN
+          </button>
+          <button
+            data-page-buttons="contact"
+            class="border-none transparent text-left font-lg cursor-pointer"
+          >
+            CONTACT
+          </button>
         </nav>
       </div>
       <div class="socials">
         <a href=""
-          ><img src="images/twitter.png" alt="" class="social-icon"
+          ><img src="images/twitter.png" alt="Twitter" class="social-icon"
         /></a>
         <a href=""
-          ><img src="images/facebook.png" alt="" class="social-icon"
+          ><img src="images/facebook.png" alt="Facebook" class="social-icon"
         /></a>
         <a href=""
-          ><img src="images/instagram.png" alt="" class="social-icon"
+          ><img src="images/instagram.png" alt="Instagram" class="social-icon"
         /></a>
         <a href=""
-          ><img src="images/youtube.png" alt="" class="social-icon"
+          ><img src="images/youtube.png" alt="Youtube" class="social-icon"
         /></a>
       </div>
     </div>
 
     <!--HOME-->
-    <section id="home" data-page="home" class="page">
+    <section id="home" data-page="home" class="page active">
       <!--Header-->
       <div class="flex justify-center">
-        <div
-          class="justify-center-lg w-80 flex flex-wrap gap-4 items-center justify-between min-h-100 flex-column-lg align-center-lg mt-6-lg"
-        >
+        <div class="flex w-80 justify-between items-center">
           <!--Left Side-->
           <div class="justify-center-lg flex-lg flex-column-lg">
             <h1 class="font-xxl text-center-lg">BOOST YOUR SPEED</h1>
@@ -112,16 +131,58 @@
           </div>
         </div>
       </div>
+      <div class="flex justify-center">
+        <div class="flex w-80 justify-between items-center">
+          <div
+            id="featured-items"
+            class="flex gap-4 wrap justify-center justify-between mt-4"
+          ></div>
+        </div>
+      </div>
     </section>
     <!--MENS-->
     <section id="men" data-page="men" class="page active">
-      <div class="flex justify-center">
-        <div id="men-items" class="flex w-80 wrap justify-center"></div>
+      <div class="flex justify-center mt-10">
+        <div class="w-80">
+          <h2 class="font-xl">SNEAKER FOR MEN</h2>
+          <p class="mt-2 mb-1 dark-gray w-80">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo odio,
+            beatae laudantium iste tempora deleniti perspiciatis ducimus
+            laboriosam non repellendus. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Cumque laboriosam quis ab? Suscipit iusto atque
+            eaque quaerat, qui molestias quia ab perspiciatis.
+          </p>
+          <a href="" class="black">Read More...</a>
+          <div
+            id="men-items"
+            class="flex gap-4 wrap justify-center justify-between mt-4"
+          ></div>
+        </div>
+        <div
+          id="women-items"
+          class="flex gap-4 wrap justify-center justify-between mt-4"
+        ></div>
       </div>
     </section>
     <!--WOMENS-->
     <section id="women" data-page="women" class="page">
-      <div id="wome-items"></div>
+      <div class="flex justify-center mt-10">
+        <div class="w-80">
+          <h2 class="font-xl">SNEAKER FOR WOMEN</h2>
+          <p class="mt-2 mb-1 dark-gray w-80">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo odio,
+            beatae laudantium iste tempora deleniti perspiciatis ducimus
+            laboriosam non repellendus. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Cumque laboriosam quis ab? Suscipit iusto atque
+            eaque quaerat, qui molestias quia ab perspiciatis.
+          </p>
+          <a href="" class="black">Read More...</a>
+          <div
+            id="women-items"
+            class="flex gap-4 wrap justify-center justify-between mt-4"
+          ></div>
+        </div>
+      </div>
     </section>
     <!--CONTACTS-->
     <section id="contact" data-page="contact" class="page">

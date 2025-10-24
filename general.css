@@ -68,6 +68,10 @@
   margin-top: 80px;
 }
 
+.mt-10 {
+  margin-top: 100px;
+}
+
 .mt-16 {
   margin-top: 160px;
 }
@@ -198,6 +202,7 @@
 
 .black {
   color: black;
+  background: transparent;
 }
 .white {
   color: white;

@@ -1,7 +1,9 @@
-import { itemsMen, itemsWomen } from "./products";
+import { itemsMen, itemsWomen, popularProducts } from "./products";
 
 const menItemsContainer = document.getElementById("men-items");
 const womenItemsContainer = document.getElementById("women-items");
+
+const featuredItemsContainer = document.getElementById("featured-items");
 
 // Iterating through each of the object in the "itemsMen" array of objects in the products.js file
 
@@ -70,6 +72,13 @@ function renderProducts(products, container) {
     plusBtn.classList.add("plus-btn");
     plusBtn.addEventListener("click", () => {
       amountOfAddedItems++;
+      amountText.textContent = amountOfAddedItems;
+    });
+    minusBtn.addEventListener("click", () => {
+      if (amountOfAddedItems > 0) {
+        amountOfAddedItems--;
+        amountText.textContent = amountOfAddedItems;
+      }
     });
 
     minusBtn.textContent = "-";
@@ -94,3 +103,4 @@ function renderProducts(products, container) {
 
 renderProducts(itemsMen, menItemsContainer);
 renderProducts(itemsWomen, womenItemsContainer);
+renderProducts(popularProducts, featuredItemsContainer);
