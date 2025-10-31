@@ -61,9 +61,11 @@
 .mt-3 {
   margin-top: 30px;
 }
+
 .mt-4 {
   margin-top: 40px;
 }
+
 .mt-8 {
   margin-top: 80px;
 }
@@ -168,6 +170,10 @@
   font-size: 55px;
 }
 
+.font-xxxl {
+  font-size: 7rem;
+}
+
 .border-none {
   border: none;
 }
@@ -237,9 +243,9 @@
 }
 
 .badge {
-  padding: 10px 30px;
-  font-weight: bold;
-  font-size: 16px;
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 1.3rem;
 }
 
 .badge-rose {
@@ -252,9 +258,15 @@
   color: #628c74;
 }
 
-.badge-blue {
-  background: #b2c5cb;
-  color: #648488;
+.badge-advertisement {
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+}
+
+.badge-advertisement-blue {
+  background: #5a6eb3;
+  color: white;
 }
 
 .badge-dark-blue {
