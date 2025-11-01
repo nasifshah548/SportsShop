@@ -132,7 +132,7 @@
         </div>
       </div>
       <!-- Popular Products -->
-      <div class="flex justify-center mt-8">
+      <div class="flex justify-center mt-16">
         <div class="w-80 text-center">
           <h2 class="font-xl">Featured Products</h2>
           <p class="gray">You might like these shows as well</p>
@@ -144,7 +144,7 @@
       </div>
       <!-- Advertisement -->
       <div
-        class="advertisement flex justify-center items-center flex-column mt-8"
+        class="advertisement flex justify-center items-center flex-column mt-16"
       >
         <p class="font-xxxl bold">SUMMER SALE</p>
         <p class="font-lg">Prepare to not miss out on 70% off!</p>
@@ -154,30 +154,48 @@
       </div>
 
       <!-- Card Section -->
-      <div class="flex justify-center items-center gap-2 mt-8">
-        <div class="card">
-          <img src="images/info1.png" alt="Everywhere" class="info-image" />
-          <p class="badge badge-rose">Everywhere</p>
+      <div class="flex flex-column items-center mt-8">
+        <h2 class="font-xl">Why choose us?</h2>
+        <div class="flex justify-center items-center gap-2 wrap w-80 mt-4">
+          <div class="card">
+            <img src="images/info1.png" alt="Everywhere" class="info-image" />
+            <p class="badge badge-rose">Everywhere</p>
+          </div>
+          <div class="card">
+            <img src="images/info2.png" alt="Fast Order" class="info-image" />
+            <p class="badge badge-green">Fast Order</p>
+          </div>
+          <div class="card">
+            <img src="images/info3.png" alt="Cheap" class="info-image" />
+            <p class="badge badge-blue">Cheap</p>
+          </div>
+          <div class="card">
+            <img
+              src="images/info4.png"
+              alt="Fast Delivery"
+              class="info-image"
+            />
+            <p class="badge badge-dark-blue">Fast Delivery</p>
+          </div>
+          <div class="card">
+            <img src="images/info5.png" alt="Good Quality" class="info-image" />
+            <p class="badge badge-pink">Good Quality</p>
+          </div>
+          <div class="card">
+            <img src="images/info6.png" alt="Support" class="info-image" />
+            <p class="badge badge-orange">Support</p>
+          </div>
         </div>
-        <div class="card">
-          <img src="images/info2.png" alt="Fast Order" class="info-image" />
-          <p class="badge badge-green">Fast Order</p>
-        </div>
-        <div class="card">
-          <img src="images/info3.png" alt="Cheap" class="info-image" />
-          <p class="badge badge-blue">Cheap</p>
-        </div>
-        <div class="card">
-          <img src="images/info4.png" alt="Fast Delivery" class="info-image" />
-          <p class="badge badge-dark-blue">Fast Delivery</p>
-        </div>
-        <div class="card">
-          <img src="images/info5.png" alt="Good Quality" class="info-image" />
-          <p class="badge badge-pink">Good Quality</p>
-        </div>
-        <div class="card">
-          <img src="images/info6.png" alt="Support" class="info-image" />
-          <p class="badge badge-orange">Support</p>
+      </div>
+      <!-- New Products -->
+      <div class="flex justify-center mt-16">
+        <div class="w-80 text-center">
+          <h2 class="font-xl">New Products</h2>
+          <p class="gray">Check out our new collection</p>
+          <div
+            id="new-items"
+            class="flex gap-4 wrap justify-center justify-between mt-4"
+          ></div>
         </div>
       </div>
     </section>
@@ -226,8 +244,40 @@
       </div>
     </section>
     <!--CONTACTS-->
-    <section id="contact" data-page="contact" class="page">
-      Lorem Ipsum Dolor Sit Amet. Contact
+    <section id="contact" data-page="contact" class="page active">
+      <div class="flex justify-center h-100 items-center">
+        <div class="w-80">
+          <!--Left Side-->
+          <div>
+            <h2 class="font-xl">Contact</h2>
+            <p class="mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+              repellendus, accusantium eos architecto debitis.
+            </p>
+            <div class="flex gap-1 mt-1">
+              <img
+                src="images/location.png"
+                alt="location"
+                class="contact-icon"
+              />
+              <p>Spring Garden</p>
+            </div>
+            <div class="flex gap-1 mt-1">
+              <img
+                src="images/phone-call.png"
+                alt="location"
+                class="contact-icon"
+              />
+              <p>+19028701548</p>
+            </div>
+            <div class="flex gap-1 mt-1">
+              <img src="images/email.png" alt="location" class="contact-icon" />
+              <p>loremipsum@hotmail.com</p>
+            </div>
+          </div>
+          <!--Right Side-->
+        </div>
+      </div>
     </section>
   </body>
 </html>

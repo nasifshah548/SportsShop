@@ -218,3 +218,7 @@ body {
 .page.active {
   display: block;
 }
+
+.contact-icon {
+  width: 20px;
+}

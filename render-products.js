@@ -1,9 +1,10 @@
-import { itemsMen, itemsWomen, popularProducts } from "./products";
+import { itemsMen, itemsWomen, popularProducts, newProducts } from "./products";
 
 const menItemsContainer = document.getElementById("men-items");
 const womenItemsContainer = document.getElementById("women-items");
 
 const featuredItemsContainer = document.getElementById("featured-items");
+const newItemsContainer = document.getElementById("new-items");
 
 // Iterating through each of the object in the "itemsMen" array of objects in the products.js file
 
@@ -104,3 +105,4 @@ function renderProducts(products, container) {
 renderProducts(itemsMen, menItemsContainer);
 renderProducts(itemsWomen, womenItemsContainer);
 renderProducts(popularProducts, featuredItemsContainer);
+renderProducts(newProducts, newItemsContainer);
