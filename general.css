@@ -237,6 +237,15 @@
   font-size: 16px;
   cursor: pointer;
 }
+
+.btn-square {
+  padding: 10px 60px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .btn-orange {
   color: white;
   background: #fe4b1f;
@@ -298,6 +307,10 @@
 
 .w-100 {
   width: 100%;
+}
+
+.w-60 {
+  width: 60%;
 }
 
 .check-square {

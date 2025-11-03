@@ -9,6 +9,14 @@
     <script type="module" src="render-products.js" defer></script>
   </head>
   <body>
+    <button id="cart-btn">
+      <img
+        src="images/shopping-bag.png"
+        alt="Cart"
+        class="shopping-cart-icon"
+      />
+      <p>0</p>
+    </button>
     <div id="nav-bar-closed" class="active">
       <button id="open-btn">
         <img src="images/menu.png" alt="Menu" class="open-navbar-icon" />
@@ -246,11 +254,11 @@
     <!--CONTACTS-->
     <section id="contact" data-page="contact" class="page active">
       <div class="flex justify-center h-100 items-center">
-        <div class="w-80">
+        <div class="w-60 flex gap-4">
           <!--Left Side-->
           <div>
-            <h2 class="font-xl">Contact</h2>
-            <p class="mt-3">
+            <h2 class="font-xl">CONTACT US!</h2>
+            <p class="mt-4">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
               repellendus, accusantium eos architecto debitis.
             </p>
@@ -268,7 +276,7 @@
                 alt="location"
                 class="contact-icon"
               />
-              <p>+19028701548</p>
+              <p>+0 123 456-7890</p>
             </div>
             <div class="flex gap-1 mt-1">
               <img src="images/email.png" alt="location" class="contact-icon" />
@@ -276,6 +284,38 @@
             </div>
           </div>
           <!--Right Side-->
+          <form class="flex flex-column gap-2 w-100">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              class="contact-input"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="contact-input"
+            />
+            <input
+              type="text"
+              name="phone-number"
+              id="phone-number"
+              placeholder="Phone"
+              class="contact-input"
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              class="contact-textarea"
+            ></textarea>
+            <div class="flex flex-end">
+              <button type="submit" class="btn-square btn-orange">SEND</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
