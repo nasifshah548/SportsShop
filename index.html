@@ -9,13 +9,13 @@
     <script type="module" src="render-products.js" defer></script>
   </head>
   <body>
-    <button id="cart-btn">
+    <button id="cart-btn" type="button" data-page-btn="checkout">
       <img
         src="images/shopping-bag.png"
         alt="Cart"
         class="shopping-cart-icon"
       />
-      <p>0</p>
+      <p class="amount-badge">100</p>
     </button>
     <div id="nav-bar-closed" class="active">
       <button id="open-btn">
@@ -39,34 +39,14 @@
     <!-- Navbar Close -->
     <div id="nav-bar-open">
       <div>
-        <button id="close-btn" class="transparent border-none cursor-pointer">
-          <img src="images/close.png" alt="Menu" class="close-navbar-icon" />
+        <button id="close-btn">
+          <img src="images/close.png" alt="Menu" class="nav-icon" />
         </button>
-        <nav class="flex flex-column gap-2 mt-4">
-          <button
-            data-page-buttons="home"
-            class="border-none transparent text-left font-lg cursor-pointer"
-          >
-            HOME
-          </button>
-          <button
-            data-page-buttons="men"
-            class="border-none transparent text-left font-lg cursor-pointer"
-          >
-            MEN
-          </button>
-          <button
-            data-page-buttons="women"
-            class="border-none transparent text-left font-lg cursor-pointer"
-          >
-            WOMEN
-          </button>
-          <button
-            data-page-buttons="contact"
-            class="border-none transparent text-left font-lg cursor-pointer"
-          >
-            CONTACT
-          </button>
+        <nav>
+          <button data-page-buttons="home">HOME</button>
+          <button data-page-buttons="men">MEN</button>
+          <button data-page-buttons="women">WOMEN</button>
+          <button data-page-buttons="contact">CONTACT</button>
         </nav>
       </div>
       <div class="socials">
@@ -318,6 +298,11 @@
           </form>
         </div>
       </div>
+    </section>
+
+    <!--CheckOut-->
+    <section id="checkout" data-page="checkout" class="page active">
+      lorem ipsum doler
     </section>
   </body>
 </html>

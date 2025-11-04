@@ -1,4 +1,5 @@
 import { itemsMen, itemsWomen, popularProducts, newProducts } from "./products";
+import { cart } from "./cart";
 
 const menItemsContainer = document.getElementById("men-items");
 const womenItemsContainer = document.getElementById("women-items");
@@ -96,6 +97,27 @@ function renderProducts(products, container) {
     const cartBtn = document.createElement("button");
     cartBtn.classList.add("cart-btn");
     cartBtn.textContent = "Add to Cart";
+
+    // Populating the cart array with products on which the user clicked the Add to Cart button
+    cartBtn.addEventListener("click", () => {
+      if (amountOfAddedItems > 0) {
+        cart.push({
+          id: x.id,
+          name: x.name,
+          material: x.material,
+          price: x.price,
+          weight: x.weight,
+          colors: x.colors,
+          description: x.description,
+          image: x.image,
+          amount: amountOfAddedItems,
+        });
+
+        amountOfAddedItems = 0;
+        amountText.textContent = amountOfAddedItems;
+      }
+    });
+
     wrapperDiv.append(cartBtn);
 
     container.append(wrapperDiv);
