@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="index.js" defer></script>
     <script type="module" src="render-products.js" defer></script>
+    <script type="module" src="cart.js" defer></script>
   </head>
   <body>
     <button id="cart-btn" type="button" data-page-btn="checkout">
@@ -302,7 +303,26 @@
 
     <!--CheckOut-->
     <section id="checkout" data-page="checkout" class="page active">
-      lorem ipsum doler
+      <div class="flex justify-center">
+        <div class="w-80">
+          <!--Left Side-->
+          <div>
+            <h2>Contact</h2>
+            <div>
+              <div>
+                <label for="contact-email">Email</label>
+                <input type="email" name="contact-email" id="contact-email" />
+              </div>
+              <div>
+                <label for="contact-phone">Phone</label>
+                <input type="phone" name="contact-phone" id="contact-phone" />
+              </div>
+            </div>
+          </div>
+
+          <!--Right Side-->
+        </div>
+      </div>
     </section>
   </body>
 </html>

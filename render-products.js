@@ -1,6 +1,8 @@
 import { itemsMen, itemsWomen, popularProducts, newProducts } from "./products";
 import { cart } from "./cart";
 
+const amountBadge = document.querySelector(".amount-badge");
+
 const menItemsContainer = document.getElementById("men-items");
 const womenItemsContainer = document.getElementById("women-items");
 
@@ -113,6 +115,11 @@ function renderProducts(products, container) {
           amount: amountOfAddedItems,
         });
 
+        localStorage.setItem("cart", JSON.stringify(cart));
+        amountBadge.textContent = cart.reduce(
+          (sum, item) => (sum = sum + item.amount),
+          0
+        );
         amountOfAddedItems = 0;
         amountText.textContent = amountOfAddedItems;
       }
