@@ -233,7 +233,7 @@
       </div>
     </section>
     <!--CONTACTS-->
-    <section id="contact" data-page="contact" class="page active">
+    <section id="contact" data-page="contact" class="page">
       <div class="flex justify-center h-100 items-center">
         <div class="w-60 flex gap-4">
           <!--Left Side-->
@@ -303,20 +303,66 @@
 
     <!--CheckOut-->
     <section id="checkout" data-page="checkout" class="page active">
-      <div class="flex justify-center">
-        <div class="w-80">
+      <div class="flex justify-center items-center h-100">
+        <div class="w-60 card-checkout">
           <!--Left Side-->
           <div>
             <h2>Contact</h2>
-            <div>
-              <div>
-                <label for="contact-email">Email</label>
+            <div class="flex">
+              <div class="flex flex-column grow-1">
+                <label for="contact-email" class="font-sm">Email</label>
                 <input type="email" name="contact-email" id="contact-email" />
               </div>
-              <div>
-                <label for="contact-phone">Phone</label>
-                <input type="phone" name="contact-phone" id="contact-phone" />
+              <div class="flex flex-column grow-1">
+                <label for="contact-phone" class="font-sm">Phone</label>
+                <input
+                  type="phone"
+                  name="contact-phone"
+                  id="contact-phone"
+                  class="mt-05"
+                />
               </div>
+            </div>
+            <div class="flex items-center gap-1 mt-1">
+              <input
+                type="checkbox"
+                name="email-checkbox"
+                id="email-checkbox"
+                class="mt-05"
+              />
+              <label for="email-checkbox" class="font-sm"
+                >Email me with news and offers</label
+              >
+            </div>
+            <h2>Shipping</h2>
+            <div class="flex">
+              <div class="flex flex-column grow-1">
+                <label for="contact-first-name" class="font-sm">Name</label>
+                <input
+                  type="text"
+                  name="contact-first-name"
+                  id="contact-first-name"
+                  class="mt-05"
+                />
+              </div>
+              <div class="flex flex-column grow-1">
+                <label for="contact-last-name" class="font-sm">Address</label>
+                <input
+                  type="text"
+                  name="contact-last-name"
+                  id="contact-last-name"
+                  class="mt-05"
+                />
+              </div>
+            </div>
+            <div class="flex flex-column">
+              <label for="contact-phone" class="font-sm"></label>
+              <input
+                type="text"
+                name="contact-address"
+                id="contact-address"
+                class="mt-05"
+              />
             </div>
           </div>
 
