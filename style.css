@@ -273,8 +273,20 @@ body {
   width: 800px;
 }
 
-#email-checkbox {
+#email-checkbox,
+#terms-checkbox {
   width: 20px;
   height: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.radio-btn {
+  width: 20px;
+  height: 20px;
+}
+
+.checkout-input {
+  padding: 10px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }

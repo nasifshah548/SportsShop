@@ -308,10 +308,15 @@
           <!--Left Side-->
           <div>
             <h2>Contact</h2>
-            <div class="flex">
+            <div class="flex gap-1 mt-1">
               <div class="flex flex-column grow-1">
                 <label for="contact-email" class="font-sm">Email</label>
-                <input type="email" name="contact-email" id="contact-email" />
+                <input
+                  type="email"
+                  name="contact-email"
+                  id="contact-email"
+                  class="checkout-input"
+                />
               </div>
               <div class="flex flex-column grow-1">
                 <label for="contact-phone" class="font-sm">Phone</label>
@@ -319,7 +324,7 @@
                   type="phone"
                   name="contact-phone"
                   id="contact-phone"
-                  class="mt-05"
+                  class="mt-05 checkout-input"
                 />
               </div>
             </div>
@@ -334,15 +339,15 @@
                 >Email me with news and offers</label
               >
             </div>
-            <h2>Shipping</h2>
-            <div class="flex">
+            <h2 class="mt-3">Shipping</h2>
+            <div class="flex gap-1 mt-1">
               <div class="flex flex-column grow-1">
                 <label for="contact-first-name" class="font-sm">Name</label>
                 <input
                   type="text"
                   name="contact-first-name"
                   id="contact-first-name"
-                  class="mt-05"
+                  class="mt-05 checkout-input"
                 />
               </div>
               <div class="flex flex-column grow-1">
@@ -351,18 +356,72 @@
                   type="text"
                   name="contact-last-name"
                   id="contact-last-name"
-                  class="mt-05"
+                  class="mt-05 checkout-input"
                 />
               </div>
             </div>
-            <div class="flex flex-column">
-              <label for="contact-phone" class="font-sm"></label>
+            <div class="flex gap-1">
+              <div class="flex flex-column grow-1">
+                <label for="contact-first-name" class="font-sm"
+                  >Postal Code</label
+                >
+                <input
+                  type="text"
+                  name="contact-postal-code"
+                  id="contact-postal-code"
+                  class="mt-05 checkout-input"
+                />
+              </div>
+              <div class="flex flex-column grow-1">
+                <label for="contact-last-name" class="font-sm">City</label>
+                <input
+                  type="text"
+                  name="contact-city"
+                  id="contact-city"
+                  class="mt-05 checkout-input"
+                />
+              </div>
+            </div>
+            <h2 class="mt-3">Payment Method</h2>
+            <div class="flex flex-column gap-1 mt-1">
+              <div class="flex items-center gap-1">
+                <input
+                  type="radio"
+                  name="payment-method"
+                  id="credit-card"
+                  class="radio-btn"
+                />
+                <label for="credit-card">Credit Card</label>
+              </div>
+              <div class="flex items-center gap-1">
+                <input
+                  type="radio"
+                  name="payment-method"
+                  id="paypal"
+                  class="radio-btn"
+                />
+                <label for="paypal">PayPal</label>
+              </div>
+              <div class="flex items-center gap-1">
+                <input
+                  type="radio"
+                  name="payment-method"
+                  id="klarna"
+                  class="radio-btn"
+                />
+                <label for="klarna">Klarna</label>
+              </div>
+            </div>
+            <div class="flex items-center gap-1 mt-3">
               <input
-                type="text"
-                name="contact-address"
-                id="contact-address"
-                class="mt-05"
+                type="checkbox"
+                name="terms-checkbox"
+                id="terms-checkbox"
+                class="mt-05 checkout-input"
               />
+              <label for="terms-checkbox" class="font-sm"
+                >I agree to the terms and conditions</label
+              >
             </div>
           </div>
 
