@@ -297,6 +297,18 @@
   color: #7c9589;
 }
 
+.btn-promo {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1.1rem;
+}
+
+.btn-promo-blue {
+  background: #627bb8;
+  color: white;
+}
+
 .grow-1 {
   flex-grow: 1;
 }

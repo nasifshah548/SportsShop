@@ -17,11 +17,14 @@ cart.forEach((x) => {
   const itemContainer = document.createElement("div");
   itemContainer.classList.add("item-container");
 
+  const leftContainer = document.createElement("div");
+  leftContainer.classList.add("checkout-left");
+
   const img = document.createElement("img");
   img.classList.add("checkout-image");
   img.src = x.image;
 
-  itemContainer.append(img);
+  leftContainer.append(img);
 
   const informationContainer = document.createElement("div");
   informationContainer.classList.add("checkout-information-container");
@@ -42,13 +45,14 @@ cart.forEach((x) => {
   informationContainer.append(material);
   informationContainer.append(weight);
 
-  itemContainer.append(informationContainer);
+  leftContainer.append(informationContainer);
 
   const price = document.createElement("p");
   price.classList.add("checkout-price");
   price.textContent = "$" + x.price;
 
+  itemContainer.append(leftContainer);
   itemContainer.append(price);
 
-  renderCartContainer.append(itemContainer);
+  renderCartContainer.prepend(itemContainer);
 });
