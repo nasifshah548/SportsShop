@@ -1,5 +1,5 @@
 import { itemsMen, itemsWomen, popularProducts, newProducts } from "./products";
-import { cart } from "./cart";
+import { cart, renderCart } from "./cart";
 
 const amountBadge = document.querySelector(".amount-badge");
 
@@ -11,7 +11,7 @@ const newItemsContainer = document.getElementById("new-items");
 
 // Iterating through each of the object in the "itemsMen" array of objects in the products.js file
 
-function renderProducts(products, container) {
+const renderProducts = (products, container) => {
   products.forEach((x) => {
     let amountOfAddedItems = 0;
 
@@ -122,6 +122,7 @@ function renderProducts(products, container) {
         );
         amountOfAddedItems = 0;
         amountText.textContent = amountOfAddedItems;
+        renderCart();
       }
     });
 
@@ -129,7 +130,7 @@ function renderProducts(products, container) {
 
     container.append(wrapperDiv);
   });
-}
+};
 
 renderProducts(itemsMen, menItemsContainer);
 renderProducts(itemsWomen, womenItemsContainer);

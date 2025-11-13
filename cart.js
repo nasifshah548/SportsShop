@@ -1,4 +1,5 @@
 const renderCartContainer = document.getElementById("render-cart");
+const totalPrice = document.getElementById("total-price");
 const amountBadge = document.querySelector(".amountBadge");
 
 // If there is a local storage then take items from the local storage,
@@ -6,53 +7,57 @@ const amountBadge = document.querySelector(".amountBadge");
 
 export const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-amountBadge.textContent = cart.reduce(
-  (sum, item) => (sum = sum + item.amount),
-  0
-);
+totalPrice.textContent =
+  "$" + cart.reduce((sum, x) => (sum = sum + x.price * x.amount), 0).toFixed(2);
 
-// Iterating through each item in the cart array
+amountBadge.textContent = cart.reduce((sum, x) => (sum = sum + x.amount), 0);
 
-cart.forEach((x) => {
-  const itemContainer = document.createElement("div");
-  itemContainer.classList.add("item-container");
+export const renderCart = () => {
+  // Iterating through each item in the cart array
 
-  const leftContainer = document.createElement("div");
-  leftContainer.classList.add("checkout-left");
+  cart.forEach((x) => {
+    const itemContainer = document.createElement("div");
+    itemContainer.classList.add("item-container");
 
-  const img = document.createElement("img");
-  img.classList.add("checkout-image");
-  img.src = x.image;
+    const leftContainer = document.createElement("div");
+    leftContainer.classList.add("checkout-left");
 
-  leftContainer.append(img);
+    const img = document.createElement("img");
+    img.classList.add("checkout-image");
+    img.src = x.image;
 
-  const informationContainer = document.createElement("div");
-  informationContainer.classList.add("checkout-information-container");
+    leftContainer.append(img);
 
-  const title = document.createElement("p");
-  title.classList.add("checkout-title");
-  title.textContent = x.name;
+    const informationContainer = document.createElement("div");
+    informationContainer.classList.add("checkout-information-container");
 
-  const material = document.createElement("p");
-  material.classList.add("checkout-material");
-  material.textContent = x.material;
+    const title = document.createElement("p");
+    title.classList.add("checkout-title");
+    title.textContent = x.name;
 
-  const weight = document.createElement("p");
-  weight.classList.add("checkout-weight");
-  weight.textContent = x.weight;
+    const material = document.createElement("p");
+    material.classList.add("checkout-material");
+    material.textContent = x.material;
 
-  informationContainer.append(title);
-  informationContainer.append(material);
-  informationContainer.append(weight);
+    const weight = document.createElement("p");
+    weight.classList.add("checkout-weight");
+    weight.textContent = x.weight;
 
-  leftContainer.append(informationContainer);
+    informationContainer.append(title);
+    informationContainer.append(material);
+    informationContainer.append(weight);
 
-  const price = document.createElement("p");
-  price.classList.add("checkout-price");
-  price.textContent = "$" + x.price;
+    leftContainer.append(informationContainer);
 
-  itemContainer.append(leftContainer);
-  itemContainer.append(price);
+    const price = document.createElement("p");
+    price.classList.add("checkout-price");
+    price.textContent = "$" + x.price;
 
-  renderCartContainer.prepend(itemContainer);
-});
+    itemContainer.append(leftContainer);
+    itemContainer.append(price);
+
+    renderCartContainer.prepend(itemContainer);
+  });
+};
+
+renderCart();
