@@ -292,10 +292,6 @@ body {
 }
 
 #render-cart {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  width: 100%;
 }
 
 .item-checkout-container {
@@ -340,4 +336,17 @@ body {
   font-size: 0.9rem;
   width: 100%;
   cursor: pointer;
+}
+
+.sidebar-container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  height: fit-content;
+}
+
+footer {
+  background: #0f1115;
+  color: #e9edf1;
 }

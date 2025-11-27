@@ -13,6 +13,8 @@ totalPrice.textContent =
 amountBadge.textContent = cart.reduce((sum, x) => (sum = sum + x.amount), 0);
 
 export const renderCart = () => {
+  renderCartContainer.textContent = "";
+
   // Iterating through each item in the cart array
 
   cart.forEach((x) => {
