@@ -350,3 +350,23 @@ footer {
   background: #0f1115;
   color: #e9edf1;
 }
+
+.footer-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 225, 0.2);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link a {
+  color: #9aa4b2;
+  text-decoration: none;
+}
+
+.py-3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

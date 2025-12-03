@@ -250,6 +250,14 @@
   cursor: pointer;
 }
 
+.btn-square-small {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .btn-orange {
   color: white;
   background: #fe4b1f;
@@ -358,4 +366,8 @@
 
 .border-bottom {
   border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.footer-gray {
+  color: #9aa4b2;
 }
