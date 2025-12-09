@@ -366,7 +366,25 @@ footer {
   text-decoration: none;
 }
 
-.py-3 {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.footer-input {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 225, 0.2);
+  background: transparent;
+  padding: 10px;
+}
+
+.footer-container {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 225, 0.2);
+}
+
+.payment-badge {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 225, 0.2);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

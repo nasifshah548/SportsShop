@@ -26,12 +26,20 @@
   justify-content: flex-end;
 }
 
+.flex-start {
+  justify-content: flex-start;
+}
+
 .grid {
   display: grid;
 }
 
 .grid-auto {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.gap-05 {
+  gap: 5px;
 }
 
 .gap-1 {
@@ -48,6 +56,10 @@
 
 .gap-4 {
   gap: 40px;
+}
+
+.gap-8 {
+  gap: 80px;
 }
 
 .mt-05 {
@@ -204,6 +216,10 @@
 
 .thin {
   font-weight: 300;
+}
+
+.w-70 {
+  width: 70%;
 }
 
 .w-80 {
@@ -370,4 +386,13 @@
 
 .footer-gray {
   color: #9aa4b2;
+}
+
+.py-3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.underlined-none {
+  text-decoration: none;
 }
