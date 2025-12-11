@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="media.css" />
     <script type="module" src="index.js" defer></script>
     <script type="module" src="render-products.js" defer></script>
     <script type="module" src="cart.js" defer></script>
@@ -70,12 +72,14 @@
     <section id="home" data-page="home" class="page active">
       <!--Header-->
       <div class="flex justify-center h-100">
-        <div class="flex w-80 justify-between items-center">
+        <div
+          class="flex w-80 justify-between items-center wrap-lg .justify-center-lg mt-6-lg text-center-lg"
+        >
           <!--Left Side-->
-          <div class="justify-center-lg flex-lg flex-column-lg">
-            <h1 class="font-xxl text-center-lg">BOOST YOUR SPEED</h1>
-            <p class="font-xl thin text-center-lg">50.00$</p>
-            <p class="font-sm gray info-text mt-2 text-center-lg w-80-lg mb-2">
+          <div class="flex-lg flex-column-lg items-center-lg">
+            <h1 class="font-xxl">BOOST YOUR SPEED</h1>
+            <p class="thin font-xl">50.00$</p>
+            <p class="header-text font-xs text-center-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
               necessitatibus quibusdam eos molestiae unde sapiente fugiat magni,
               obcaecati alias magnam eius incidunt laboriosam doloribus
@@ -112,10 +116,13 @@
               data-shoes="black"
             />
             <div class="colors flex gap-1 flex-end">
-              <button data-color="blue" class="blue color"></button>
-              <button data-color="red" class="red color"></button>
-              <button data-color="green" class="green color"></button>
-              <button data-color="black" class="black color"></button>
+              <button data-btn-color="blue" class="blue color"></button>
+              <button data-btn-color="red" class="red color"></button>
+              <button data-btn-color="green" class="green color"></button>
+              <button
+                data-btn-color="black"
+                class="black-circle color"
+              ></button>
             </div>
           </div>
         </div>
@@ -302,7 +309,7 @@
     </section>
 
     <!--CheckOut-->
-    <section id="checkout" data-page="checkout" class="page active">
+    <section id="checkout" data-page="checkout" class="page">
       <div class="flex justify-center items-center h-100">
         <div class="w-60 card-checkout flex gap-2">
           <!--Left Side-->
@@ -470,13 +477,13 @@
             </div>
             <p class="mt-4 font-md bold">Newsletter</p>
             <p class="footer-gray">Get drops & deals first</p>
-            <div class="mt-2">
+            <div class="mt-2 flex gap-1">
               <input
                 type="text"
                 name="footer-email"
                 id="footer-email"
                 placeholder="Email"
-                class="footer-input"
+                class="footer-input grow-1"
               />
               <button class="btn-square-small btn-promo-blue">
                 Subscribe!
@@ -508,9 +515,9 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-between w-70 mt-2">
+        <div class="flex justify-between w-70 mt-2 items-center">
           <p>@ 2025 Leavsley. All Rights Reserved.</p>
-          <div class="flex gap-1">
+          <div class="flex gap-1 items-center">
             <p class="payment-badge">VISA</p>
             <p class="payment-badge">MASTERCARD</p>
             <p class="payment-badge">PAYPAL</p>

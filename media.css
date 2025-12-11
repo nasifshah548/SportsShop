@@ -1,0 +1,39 @@
+@media screen and (max-width: 1400px) {
+  .wrap-lg {
+    flex-wrap: wrap;
+  }
+
+  .justify-center-lg {
+    justify-content: center;
+  }
+
+  .text-center-lg {
+    text-align: center;
+  }
+
+  .mt-6-lg {
+    margin-top: 60px;
+  }
+
+  .flex-lg {
+    display: flex;
+  }
+
+  .flex-column-lg {
+    flex-direction: column;
+  }
+
+  .items-center-lg {
+    align-items: center;
+  }
+
+  .socials {
+    display: none;
+  }
+
+  #nav-bar-closed,
+  #nav-bar-open {
+    background: transparent;
+    box-shadow: none;
+  }
+}
